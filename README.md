@@ -110,5 +110,7 @@ Final Test Accuracy =
 
 [2] chesXnet Model: https://github.com/arnoweng/CheXNet
 
-[3] Idea: https://www.nature.com/articles/s43856-022-00220-6
+[3] Dino Model: https://github.com/facebookresearch/dinov2
+
+[4] Idea from: https://www.nature.com/articles/s43856-022-00220-6
 
