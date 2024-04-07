@@ -55,7 +55,7 @@ Number of examples per label:
 
 Example of chest X-ray image from the dataset:
 
-<img src="./xray.png" width="300" height="300" />
+<img src="./xray.jpg" width="300" height="300" />
 
 
 ## Architectures
