@@ -1,20 +1,20 @@
 <h2 align="center">Technion's Deep Learning (046211) Project
 </h2> 
 <p align="center">
-<img src="xray_61.png" width="300" height="300" />
+<img src="./xray_61.png" width="300" height="300" />
   </p>
 <h4 align="center">
     Iggy Segev Gal:
   
-  <a href="https://www.linkedin.com/in/iggy-s-6a53b619a/"><img src="LinkedIn_icon.png" width="40" height="40"/></a>
-    <a href="https://github.com/iggysegevgal"><img src="GitHub_logo.png" width="40" height="40"/></a>
+  <a href="https://www.linkedin.com/in/iggy-s-6a53b619a/"><img src="./LinkedIn_icon.png" width="40" height="40"/></a>
+    <a href="https://github.com/iggysegevgal"><img src="./GitHub_logo.png" width="40" height="40"/></a>
 </a>
 
 <h4 align="center">
     Eyal Gilron:
   
-  <a href="https://www.linkedin.com/in/eyal-gilron-9305ab151/"><img src="LinkedIn_icon.png" width="40" height="40"/></a>
-    <a href="https://github.com/eyalgilron"><img src="GitHub_logo.png" width="40" height="40"/></a>
+  <a href="https://www.linkedin.com/in/eyal-gilron-9305ab151/"><img src="./LinkedIn_icon.png" width="40" height="40"/></a>
+    <a href="https://github.com/eyalgilron"><img src="./GitHub_logo.png" width="40" height="40"/></a>
 </a>
 
 Table Of Contents
@@ -35,11 +35,10 @@ In this project we used the NIH-chest-X-rays dataset for age estimation from che
 ## File Tree
 |File Name | Purpose |
 |----------|---------|
-
-|`Config.py`| This file holds all of the project's configurations, parameters such as: which model to currently to train, different scheduler choices, learning rate etc.|
+|`Config.py`|This file holds all of the project's configurations, parameters such as: which model to currently to train, different scheduler choices, learning rate etc.|
 |`train.py`| The main part of the code, this files loads the dataset, calls the training method and then evaluates the results.|
 |`Dataloader.py`| Data loader for the NIH-chest x-ray with age detection|
-|`Dino.py`| This file contains the dino model class|
+|`Dino.py`|This file contains the dino model class|
 
 ## Dataset
 The dataset We used the dataset “NIH Chest X-rays” dataset which has 112,120 frontal view chest X-ray images of 30,805 different patients.
@@ -54,8 +53,9 @@ Number of examples per label:
 |50-60|7138|
 |60-70|4721|
 
-Chest X-ray image for example:
-<img src="xray.png" width="300" height="300" />
+Example of chest X-ray image from the dataset:
+
+<img src="./xray.png" width="300" height="300" />
 
 
 ## Architectures
