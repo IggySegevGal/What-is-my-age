@@ -25,9 +25,6 @@ Table Of Contents
 * [Dataset](#dataset)
 * [Architectures](#architectures)
 * [Results](#results)
-  * [Densenet with Imagenet](#Densenet-with-Imagenet)
-  * [Densenet with chesXnet](#Densenet-with-chesXnet)
-  * [Dino](#Dino)
 * [Refrences](#refrences)
 
 ## Background
@@ -91,44 +88,11 @@ For this classification task we trained a few different models to perform the ta
 
 ## Results
 
-### Densenet with Imagenet
-Regression:
 <p float="left">
-  <img src=".png" width="300" height="300" />
-  <img src=".png" width="300" height="300" /> 
+  <img src="./finetune_vs_featurex.png" width="300" height="300" />
+  <img src="./datasizes.png" width="300" height="300" /> 
 </p>
-Classification:
-<p float="left">
-  <img src=".png" width="300" height="300" />
-  <img src=".png" width="300" height="300" /> 
-</p>
-Final Test Accuracy = 
 
-### Densenet with chesXnet
-Regression:
-<p float="left">
-  <img src=".png" width="300" height="300" />
-  <img src=".png" width="300" height="300" /> 
-</p>
-Classification:
-<p float="left">
-  <img src=".png" width="300" height="300" />
-  <img src=".png" width="300" height="300" /> 
-</p>
-Final Test Accuracy = 
-
-### Dino
-Regression:
-<p float="left">
-  <img src=".png" width="300" height="300" />
-  <img src=".png" width="300" height="300" /> 
-</p>
-Classification:
-<p float="left">
-  <img src=".png" width="300" height="300" />
-  <img src=".png" width="300" height="300" /> 
-</p>
-Final Test Accuracy = 
 
 ## Refrences
 [1] NIH Dataset: https://www.kaggle.com/datasets/nih-chest-xrays
