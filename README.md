@@ -21,6 +21,7 @@ Table Of Contents
 --
 * [Background](#background)
 * [File Tree](#file-tree)
+* [Installation Instructions](#installation-instructions)
 * [Dataset](#dataset)
 * [Architectures](#architectures)
 * [Results](#results)
@@ -41,6 +42,26 @@ In this project we used the NIH-chest-X-rays dataset for age estimation from che
 |`Dataloader.py`| Data loader for the NIH-chest x-ray with age estimation for both classification and regression|
 |`dino.py`| This file contains the dino model class|
 |`test.py`| This file does the inference on the test set given a trained model |
+
+## Installation Instructions
+
+1. Get Anaconda with Python 3, follow the instructions according to your OS (Windows/Mac/Linux) at: https://www.anaconda.com/download
+2. Install the basic packages
+3. Install the required libraries according to the table below (to search for a specific library and the corresponding command you can also look at https://anaconda.org/)
+
+## Libraries to Install
+
+|Library         | Command to Run |
+|----------------|---------|
+|`numpy`|  `conda install -c conda-forge numpy`|
+|`matplotlib`|  `conda install -c conda-forge matplotlib`|
+|`pandas`|  `conda install -c conda-forge pandas`|
+|`scikit-learn`|  `conda install -c conda-forge scikit-learn`|
+|`seaborn`|  `conda install -c conda-forge seaborn`|
+|`opencv`| `conda install -c conda-forge opencv`|
+|`pytorch` (cpu)| `conda install pytorch torchvision torchaudio cpuonly -c pytorch` (<a href="https://pytorch.org/get-started/locally/">get command from PyTorch.org</a>)|
+|`pytorch` (gpu)| `conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia` (<a href="https://pytorch.org/get-started/locally/">get command from PyTorch.org</a>)|
+4. open python and run config.py
 
 ## Dataset
 The dataset We used the dataset “NIH Chest X-rays” dataset which has 112,120 frontal view chest X-ray images of 30,805 different patients.
@@ -65,6 +86,7 @@ For this classification task we trained a few different models to perform the ta
 * Densenet with Imagenet
 * Densenet with chesXnet
 * Dino
+
 
 ## Results
 
