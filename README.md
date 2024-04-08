@@ -61,6 +61,7 @@ In this project we used the NIH-chest-X-rays dataset for age estimation from che
 |`opencv`| `conda install -c conda-forge opencv`|
 |`pytorch` (cpu)| `conda install pytorch torchvision torchaudio cpuonly -c pytorch` (<a href="https://pytorch.org/get-started/locally/">get command from PyTorch.org</a>)|
 |`pytorch` (gpu)| `conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia` (<a href="https://pytorch.org/get-started/locally/">get command from PyTorch.org</a>)|
+
 4. open python and run config.py
 
 ## Dataset
@@ -83,9 +84,9 @@ Example of chest X-ray image from the dataset:
 
 ## Architectures
 For this classification task we trained a few different models to perform the task, the models we used are:
-* Densenet with Imagenet
-* Densenet with chesXnet
-* Dino
+* Densenet121 with Imagenet
+* Densenet121 with chesXnet
+* Dinov2 - ViT-S/14 distilled
 
 
 ## Results
