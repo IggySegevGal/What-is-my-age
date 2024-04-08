@@ -35,16 +35,18 @@ In this project we used the NIH-chest-X-rays dataset for age estimation from che
 ## File Tree
 |File Name | Purpose |
 |----------|---------|
-|`Config.py`|This file holds all of the project's configurations, parameters such as: which model to currently to train, different scheduler choices, learning rate etc.|
-|`train.py`| The main part of the code, this files loads the dataset, calls the training method and then evaluates the results.|
-|`Dataloader.py`| Data loader for the NIH-chest x-ray with age detection|
-|`Dino.py`|This file contains the dino model class|
+|`config.py`|This file holds all of the project's different configurations, parameters such as: which model to currently to train, different number of blocks to unfreeze, datasize choices, learning rate, regression or classification etc.|
+|`resizer.py`| Resizes the images to 224x224 and saves in new folder for faster training.|
+|`train.py`| The main part of the code, this files loads the dataset, performs the training and then evaluates the results.|
+|`Dataloader.py`| Data loader for the NIH-chest x-ray with age estimation for both classification and regression|
+|`dino.py`| This file contains the dino model class|
+|`test.py`| This file does the inference on the test set given a trained model |
 
 ## Dataset
 The dataset We used the dataset “NIH Chest X-rays” dataset which has 112,120 frontal view chest X-ray images of 30,805 different patients.
 We only took one image per patient and only from patients whose ages are in the range of 20-70.
-The data consists of 1024x1024 pixel grayscale images.
-Number of examples per label:
+The data consists of 1024x1024 pixel images.
+Number of examples per label in classification:
 |Label Name |# Training Examples|
 |-----------|-------------------|
 |20-30|3707|
